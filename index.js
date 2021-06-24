@@ -1,9 +1,9 @@
 console.log("This is index.js file")
-let apiKey="03f30fc7c2bb441e93f9d1f116aa3c50";
+// let apiKey="03f30fc7c2bb441e93f9d1f116aa3c50";
 let newsAccordian = document.querySelector("#newsAccordion");
 
 let xhr=new XMLHttpRequest();
-xhr.open("GET",`https://newsapi.org/v2/top-headlines?country=in&category=entertainment&apiKey=${apiKey}`,true);
+xhr.open("GET",`https://newsapi.org/v2/top-headlines?country=in&category=entertainment&apiKey=03f30fc7c2bb441e93f9d1f116aa3c50`,true);
 
 xhr.onload = function(){
 if(this.status === 200){
